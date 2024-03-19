@@ -57,24 +57,25 @@ namespace Advanced_linq
             {
                 Console.WriteLine(itm.Name);
             }
-            Console.WriteLine("Union:");
+            Console.WriteLine("\nUnion:");
             var union = electronics.Union(electronics2);
             foreach (var itm in union)
             {
                 Console.WriteLine(itm.Name);
             }
-            Console.WriteLine("Intersect:");
+            Console.WriteLine("\nIntersect:");
             var intersect = electronics.Intersect(electronics2);
             foreach (var itm in intersect)
             {
                 Console.WriteLine(itm.Name);
             }
-            Console.WriteLine("Except:");
+            Console.WriteLine("\nExcept:");
             var except = electronics2.Except(electronics);
             foreach (var itm in except)
             {
                 Console.WriteLine(itm.Name);
             }
+            Console.WriteLine();
         }
             
 
